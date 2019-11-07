@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1079869882282",
+    "firebase_url": "https://iamonyourway-e0903.firebaseio.com",
+    "project_id": "iamonyourway-e0903",
+    "storage_bucket": "iamonyourway-e0903.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1079869882282:android:85249a4146079e1e",
+        "android_client_info": {
+          "package_name": "com.example.iamonyourway"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1079869882282-hthfi7257mqgnhqaf6jemlqjam1es3b8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.iamonyourway",
+            "certificate_hash": "af0b7d1ab33e3c533ed466f90102e184fcb7102d"
+          }
+        },
+        {
+          "client_id": "1079869882282-6q43nm2l2sq35qb936920qddlf06fovn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDdcH6DieWrhilAuR49E2UBSS3cxn4lbCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1079869882282-6q43nm2l2sq35qb936920qddlf06fovn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
