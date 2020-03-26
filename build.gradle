@@ -4,13 +4,15 @@ buildscript {
     repositories {
         google()
         jcenter()
-        
+        mavenCentral()
     }
-    dependencies {
-        classpath 'com.android.tools.build:gradle:3.4.1'
-        classpath "io.realm:realm-gradle-plugin:6.0.0" //Rawaa added this -_-
 
-        classpath 'com.google.gms:google-services:4.2.0'  //Rawaa added this -_-
+    dependencies {
+
+        classpath 'com.android.tools.build:gradle:3.4.1'
+        //classpath "io.realm:realm-gradle-plugin:6.0.0" //Rawaa added this -_- Realm DataBase settings
+
+        classpath 'com.google.gms:google-services:4.3.2'  //Rawaa added this -_- FireBase DataBase settings
         
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
@@ -21,7 +23,8 @@ allprojects {
     repositories {
         google()
         jcenter()
-        
+       // maven { url 'https://maven.google.com' }
+        maven { url 'https://mapbox.bintray.com/mapbox' }
     }
 }
 

@@ -1,10 +1,11 @@
 package com.example.iamonyourway;
 
 import android.content.Intent;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ProgressBar;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -21,9 +22,19 @@ public class MainActivity extends AppCompatActivity {
         mDriver.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent gotoDriverRegisteration = new Intent(MainActivity.this, DriverLoginActivity.class);
+                Intent gotoDriverLogin = new Intent(MainActivity.this, DriverLoginActivity.class);
                // startActivities(gotoDriverRegisteration);
-                startActivity(gotoDriverRegisteration);
+                startActivity(gotoDriverLogin);
+                finish();
+                return;
+            }
+        });
+
+        mRider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent gotoRiderLogin = new Intent(MainActivity.this, RiderLoginActivity.class);
+                startActivity(gotoRiderLogin);
                 finish();
                 return;
             }

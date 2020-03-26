@@ -1,3 +1,11 @@
 <resources>
+
+
+
+
+
     <string name="app_name">IamOnYourWay</string>
+    <string name="title_activity_maps_for_driver">Map</string>
+    <string name="title_activity_example">Map</string>
+    <string name="title_activity_rider__maps">Map</string>
 </resources>
