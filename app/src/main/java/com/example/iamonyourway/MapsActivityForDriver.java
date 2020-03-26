@@ -78,7 +78,7 @@ public class MapsActivityForDriver extends FragmentActivity implements OnMapRead
     private static final int REQUEST_CODE = 101;
     private final String TAG = "MapsActivityForDriver";
 
-    private Button mlogout;
+    private Button mlogout,mDirections;
     private String riderID="";
     private boolean isLoggingOut = false;
 
@@ -87,13 +87,13 @@ public class MapsActivityForDriver extends FragmentActivity implements OnMapRead
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps_for_driver);
         //Rawaa
-       // mDirections = findViewById(R.id.allDirections);
+        mDirections = findViewById(R.id.allDirections);
         polylines = new ArrayList<>();
 
-       // start = new MarkerOptions().position(new LatLng(15.6569061,32.5447223)).title("Location 1");
-       // end = new MarkerOptions().position(new LatLng(15.6468091,32.5346233)).title("Location 2");
+      /*  start = new MarkerOptions().position(new LatLng(15.6569061,32.5447223)).title("Location 1");
+        end = new MarkerOptions().position(new LatLng(15.6468091,32.5346233)).title("Location 2");
 
-      /*  mDirections.setOnClickListener(new View.OnClickListener() {
+        mDirections.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 String url = getUrl(start.getPosition(),end.getPosition(),"driving");
@@ -131,6 +131,7 @@ public class MapsActivityForDriver extends FragmentActivity implements OnMapRead
         });
         getAssignedRider();
     }
+    //getUrl function for directions
     private String getUrl(LatLng start ,LatLng end, String directionMode){
         String startPoint = "origin=" + start.latitude + "," + start.longitude;
         String endPoint = "destination=" + end.longitude + "," + end.longitude;
@@ -139,8 +140,8 @@ public class MapsActivityForDriver extends FragmentActivity implements OnMapRead
         String output = "json";
         String url = "https://maps.googleapis.com/maps/api/directions/"+ output + "?" + parameters + "&key=" + getString(R.string.google_maps_key);
         return url;
-
     }
+
     private void getAssignedRider(){
         String driverID = FirebaseAuth.getInstance().getCurrentUser().getUid();
         DatabaseReference assignRiderRef = FirebaseDatabase.getInstance().getReference().child("Users").child("Drivers").child(driverID).child("RiderTripID");
@@ -328,7 +329,7 @@ public class MapsActivityForDriver extends FragmentActivity implements OnMapRead
         }
        // buildGoogleApiClient();
        // mMap.getUiSettings().setZoomControlsEnabled(true);
-      //  mMap.setMyLocationEnabled(true);
+        //mMap.setMyLocationEnabled(true);
       //  mCurrentLocation = ;
        //mMap.setMapType(GoogleMap.MAP_TYPE_SATELLITE);
         mMap.addMarker(start);
