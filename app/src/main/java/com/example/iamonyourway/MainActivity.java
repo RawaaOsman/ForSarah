@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent gotoDriverLogin = new Intent(MainActivity.this, DriverLoginActivity.class);
-               // startActivities(gotoDriverRegisteration);
+                // startActivities(gotoDriverRegisteration);
                 startActivity(gotoDriverLogin);
                 finish();
                 return;

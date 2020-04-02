@@ -33,21 +33,21 @@ import java.util.Map;
 public class DriverLoginActivity extends AppCompatActivity {
 
     //Rawaa start coding from here -_- // My First try
-   // public static final String TAG = "TAG";
+    // public static final String TAG = "TAG";
     private EditText mEmail, mPassword;
     private Button mLogin, mRegistration;
     private ProgressBar NotificationBar;
     private FirebaseAuth mAuth;
     FirebaseFirestore mFirestore;
-   // String userID;
+    // String userID;
     private FirebaseAuth.AuthStateListener firebaseAuthListener;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_driver_login);
         //Rawaa -_- old code
-            // mAuth = FirebaseAuth.getInstance();
-            //mFirestore = FirebaseFirestore.getInstance();
+        // mAuth = FirebaseAuth.getInstance();
+        //mFirestore = FirebaseFirestore.getInstance();
             /*firebaseAuthListener = new FirebaseAuth.AuthStateListener() {
             @Override
             public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
@@ -187,7 +187,7 @@ public class DriverLoginActivity extends AppCompatActivity {
         }
 
         //Rawaa -_- old code
-       // FirebaseUser currentUser = mAuth.getCurrentUser();
+        // FirebaseUser currentUser = mAuth.getCurrentUser();
         //updateUI(currentUser);
         //mAuth.addAuthStateListener(firebaseAuthListener);
 
